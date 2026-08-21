@@ -1,0 +1,41 @@
+<div class="panel section-panel" id="panel-pi">
+    <div class="panel-section">
+        <div class="panel-section-title-row">
+            <div class="panel-section-title">Network</div>
+            <button class="panel-action-btn" id="wifi-reconnect-btn" onclick="reconnectWifi()">Reconnect</button>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-box">
+                <div class="stat-label">WiFi Signal</div>
+                <div class="stat-value" id="net-wifi-signal">--</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">WiFi Name</div>
+                <div class="stat-value stat-value-small" id="net-wifi-ssid">--</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">IP Address</div>
+                <div class="stat-value stat-value-small" id="net-ip">--</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Uptime</div>
+                <div class="stat-value stat-value-small" id="net-uptime">--</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-section">
+        <div class="panel-section-title">Pi Stats</div>
+        <div class="stats-grid">
+            <div class="stat-box" id="stat-box-1">
+                <div class="stat-label" id="stat-label-1">--</div>
+                <div class="stat-value" id="stat-value-1">--</div>
+            </div>
+            <div class="stat-box" id="stat-box-2">
+                <div class="stat-label" id="stat-label-2">--</div>
+                <div class="stat-value" id="stat-value-2">--</div>
+            </div>
+        </div>
+        <div class="news-dots" id="stats-dots"></div>
+    </div>
+</div>

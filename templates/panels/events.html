@@ -1,0 +1,22 @@
+<div class="panel section-panel" id="panel-events">
+    <div class="panel-section">
+        <div class="panel-section-title-row">
+            <div class="panel-section-title">Upcoming Events</div>
+            <button class="panel-action-btn" onclick="openAddEventModal()">+ Add</button>
+        </div>
+        <div class="events-list" id="events-list">
+            <div class="empty-state">No upcoming events</div>
+        </div>
+    </div>
+
+    <div class="panel-section">
+        <div class="panel-section-title">
+            News Headlines
+            <span id="news-offline-badge" style="display:none; color:#ffdc00; font-size:0.7em;">(offline)</span>
+        </div>
+        <div class="news-list">
+            <div class="news-item" id="news-item">Loading headlines...</div>
+            <div class="news-dots" id="news-dots"></div>
+        </div>
+    </div>
+</div>

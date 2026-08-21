@@ -1,0 +1,82 @@
+<div class="panel" id="panel-home">
+    <div class="dashboard">
+        <div class="datetime-block">
+            <div class="time-row">
+                <div class="time" id="time">--:--</div>
+                <div class="seconds-ring-wrap">
+                    <svg width="46" height="46" viewBox="0 0 46 46">
+                        <circle class="seconds-ring-track" cx="23" cy="23" r="19"></circle>
+                        <circle class="seconds-ring-progress" id="seconds-ring-progress" cx="23" cy="23" r="19"
+                            stroke-dasharray="119.4" stroke-dashoffset="119.4"
+                            transform="rotate(-90 23 23)"></circle>
+                        <text class="seconds-ring-text" id="seconds-ring-text" x="23" y="24">0</text>
+                    </svg>
+                </div>
+            </div>
+            <div class="date" id="date">-- --- ----</div>
+        </div>
+
+        <div class="weather-card" id="weather-card">
+            <div class="weather-location">
+                Gulf Breeze, FL <span class="weather-cache-note" id="weather-cache-note" style="display: none;">(cached)</span>
+            </div>
+
+            <div id="weather-day-content">
+                <div id="weather-today-view">
+                    <div class="weather-day-label">Today</div>
+                    <div class="weather-main">
+                        <div class="weather-temp" id="weather-temp">--°</div>
+                        <div class="weather-temp-c" id="weather-temp-c">--°C</div>
+                    </div>
+                    <div class="weather-condition" id="weather-condition">--</div>
+                    <div class="weather-details">
+                        <div class="weather-detail">
+                            <div class="weather-detail-label">Rain Chance</div>
+                            <div class="weather-detail-value" id="weather-rain">--%</div>
+                        </div>
+                        <div class="weather-detail">
+                            <div class="weather-detail-label">High / Low</div>
+                            <div class="weather-detail-value" id="weather-hilo">--° / --°</div>
+                        </div>
+                        <div class="weather-detail">
+                            <div class="weather-detail-label">Humidity</div>
+                            <div class="weather-detail-value" id="weather-humidity">--%</div>
+                        </div>
+                        <div class="weather-detail">
+                            <div class="weather-detail-label">Wind</div>
+                            <div class="weather-detail-value" id="weather-wind">-- mph</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="weather-tomorrow-view" style="display: none;">
+                    <div class="weather-day-label">Tomorrow</div>
+                    <div class="weather-main">
+                        <div class="weather-temp" id="weather-tomorrow-high">--°</div>
+                    </div>
+                    <div class="weather-condition" id="weather-tomorrow-condition">--</div>
+                    <div class="weather-details">
+                        <div class="weather-detail">
+                            <div class="weather-detail-label">Rain Chance</div>
+                            <div class="weather-detail-value" id="weather-tomorrow-rain">--%</div>
+                        </div>
+                        <div class="weather-detail">
+                            <div class="weather-detail-label">High / Low</div>
+                            <div class="weather-detail-value" id="weather-tomorrow-hilo">--° / --°</div>
+                        </div>
+                        <div class="weather-detail">
+                            <div class="weather-detail-label">Humidity</div>
+                            <div class="weather-detail-value" id="weather-tomorrow-humidity">--%</div>
+                        </div>
+                        <div class="weather-detail">
+                            <div class="weather-detail-label">Wind</div>
+                            <div class="weather-detail-value" id="weather-tomorrow-wind">-- mph</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news-dots" id="weather-dots"></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+<div id="add-event-modal" style="display: none;">
+    <div class="modal-overlay" onclick="closeAddEventModal()"></div>
+    <div class="modal-content">
+        <div class="modal-title">Add Event</div>
+        <input type="text" id="event-title-input" class="modal-input" placeholder="Event title">
+
+        <select id="event-frequency-select" class="modal-input" onchange="updateEventFrequencyFields()">
+            <option value="once">Once</option>
+            <option value="daily">Daily</option>
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+        </select>
+
+        <input type="date" id="event-date-input" class="modal-input">
+
+        <select id="event-weekday-select" class="modal-input" style="display: none;">
+            <option value="0">Monday</option>
+            <option value="1">Tuesday</option>
+            <option value="2">Wednesday</option>
+            <option value="3">Thursday</option>
+            <option value="4">Friday</option>
+            <option value="5">Saturday</option>
+            <option value="6">Sunday</option>
+        </select>
+
+        <input type="number" id="event-dom-input" class="modal-input" placeholder="Day of month (1-31)" min="1" max="31" style="display: none;">
+
+        <input type="time" id="event-time-input" class="modal-input">
+        <div class="modal-buttons">
+            <button class="modal-btn cancel" onclick="closeAddEventModal()">Cancel</button>
+            <button class="modal-btn save" onclick="submitNewEvent()">Save</button>
+        </div>
+    </div>
+</div>
